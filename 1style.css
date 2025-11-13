@@ -1,0 +1,240 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* HEADER */
+.header {
+  background: #001f3f;
+  color: white;
+  padding: 15px 0;
+}
+
+.header .container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 60px;
+}
+
+.nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  background: url("https://i.ibb.co/GQmWCm1g/Box-Truck.jpg") center/cover
+    no-repeat;
+  height: 45vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.55);
+  padding: 2rem;
+  width: 100%;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/* ABOUT */
+.about {
+  padding: 4rem 0;
+  text-align: center;
+  background: #fff;
+}
+
+.about h2 {
+  color: #002b5c;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.about p {
+  max-width: 800px;
+  margin: 0.8rem auto;
+  color: #333;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: #f6f9fb;
+  padding: 1.8rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: #005f8e;
+  margin-bottom: 0.8rem;
+}
+
+/* SERVICES */
+.services {
+  background: #eef4f8;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.services h2 {
+  color: #002b5c;
+  margin-bottom: 2rem;
+}
+
+/* CONTACT SECTION */
+.contact {
+  padding: 4rem 1rem;
+  background-color: #f6f9fb;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+/* FORM */
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-form h2 {
+  font-size: 2rem;
+  color: #002b5c;
+  margin-bottom: 1rem;
+}
+
+.vertical-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.vertical-form label {
+  font-weight: 600;
+  color: #333;
+}
+
+.vertical-form input,
+.vertical-form textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.vertical-form button {
+  background: #11a6a1;
+  color: white;
+  border: none;
+  padding: 0.8rem 1rem;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.vertical-form button:hover {
+  background: #0e8e8a;
+}
+
+/* CONTACT IMAGE */
+.contact-image {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
+
+.contact-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.15));
+}
+
+/* FOOTER */
+.footer {
+  background: #001f3f;
+  color: white;
+  text-align: center;
+  padding: 2.5rem 1rem;
+}
+
+.footer-logo {
+  height: 90px;
+  margin-bottom: 1rem;
+}
+
+.footer p {
+  margin: 0.4rem 0;
+}
+
+/* FADE-IN EFFECT */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .contact-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-image img {
+    max-width: 280px;
+  }
+
+  .hero {
+    height: 35vh;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+}
